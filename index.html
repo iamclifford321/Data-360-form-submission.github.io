@@ -85,7 +85,7 @@
 
 <div class="container">
     <h2>Registers</h2>
-    <form>
+    <form id="test-form">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email Address" required>
         <textarea placeholder="Address" required></textarea>
@@ -95,6 +95,12 @@
         Already have an account? Login
     </div>
 </div>
-
 </body>
+    <script>
+        const frm = document.querySelector('#test-form');
+        frm.addEventListener('submit', function(event){
+            console.log('Working!!!');
+            console.log(event);
+        })
+    </script>
 </html>
