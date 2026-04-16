@@ -99,6 +99,7 @@
     <script>
         const frm = document.querySelector('#test-form');
         frm.addEventListener('submit', function(event){
+            event.preventDefault();
             console.log('Working!!!');
             console.log(event);
         })
