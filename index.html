@@ -102,6 +102,16 @@
             event.preventDefault();
             console.log('Working!!!');
             console.log(event);
+
+            SalesforceInteractions.sendEvent({
+              interaction: {
+                name: "myCustomEvent",
+                eventType: "myCustomEvent",
+                fullName: "Clifford Ursabia",
+                email: "cliff@gmail.com",
+                address: "test Address"
+              },
+            });
         })
     </script>
 </html>
