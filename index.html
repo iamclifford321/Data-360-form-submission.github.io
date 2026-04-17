@@ -4,22 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.c360a.salesforce.com/beacon/c360a/cb05a344-4d95-4c5e-9696-fe9ec42d6972/scripts/c360a.min.js"></script>
-    <script>
-        /*
-      SalesforceInteractions.init({
-        consents: [
-          {
-            provider: "Test Provider", 
-            purpose: "Tracking",
-            status: SalesforceInteractions.ConsentStatus.OptIn,
-          },
-        ],
-      }).then(()=>{
-        console.log('init');
-      });
-      */
-      console.log(window);
-    </script>
     <title>Simple Registration Form</title>
     <style>
         body {
@@ -97,25 +81,4 @@
     </div>
 </div>
 </body>
-    <script>
-        const frm = document.querySelector('#test-form');
-        frm.addEventListener('submit', function(event){
-            event.preventDefault();
-            console.log('Working!!!');
-            console.log(event);
-            /*
-            SalesforceInteractions.sendEvent({
-              interaction: {
-                name: "customFormSubmission",
-                eventType: "customFormSubmission",
-                fullName: "Clifford Ursabia",
-                email: "cliff@gmail.com",
-                address: "test Address"
-              },
-            }).then((log) => {
-                console.log(log);
-            });
-            */
-        })
-    </script>
 </html>
