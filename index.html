@@ -84,5 +84,11 @@
     document.getElementById('test-form').addEventListener("submit", (e) => {
         e.preventDefault();
     });
+
+    SalesforceInteractions.Personalization.fetch(["test_2", "home_hero"])
+      .then((personalizationResponse) => {
+        // Custom logic to render personalization on the website
+        console.log("Personalization Response", personalizationResponse);
+      });
     </script>
 </html>
